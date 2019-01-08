@@ -8,12 +8,26 @@
 
 /* Begin PBXBuildFile section */
 		F7D16BD821E4D6F2006682C6 /* SwiftForm.h in Headers */ = {isa = PBXBuildFile; fileRef = F7D16BD621E4D6F2006682C6 /* SwiftForm.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F7D16BE821E4D770006682C6 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D16BE021E4D76F006682C6 /* TextInputView.swift */; };
+		F7D16BE921E4D770006682C6 /* TextInputView.xib in Resources */ = {isa = PBXBuildFile; fileRef = F7D16BE121E4D76F006682C6 /* TextInputView.xib */; };
+		F7D16BEA21E4D770006682C6 /* InputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D16BE221E4D76F006682C6 /* InputView.swift */; };
+		F7D16BEB21E4D770006682C6 /* Validator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D16BE421E4D770006682C6 /* Validator.swift */; };
+		F7D16BEC21E4D770006682C6 /* RequiredValidator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D16BE521E4D770006682C6 /* RequiredValidator.swift */; };
+		F7D16BED21E4D770006682C6 /* Form.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D16BE621E4D770006682C6 /* Form.swift */; };
+		F7D16BEE21E4D770006682C6 /* FormItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = F7D16BE721E4D770006682C6 /* FormItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F7D16BD321E4D6F2006682C6 /* SwiftForm.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftForm.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F7D16BD621E4D6F2006682C6 /* SwiftForm.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SwiftForm.h; sourceTree = "<group>"; };
 		F7D16BD721E4D6F2006682C6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F7D16BE021E4D76F006682C6 /* TextInputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		F7D16BE121E4D76F006682C6 /* TextInputView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TextInputView.xib; sourceTree = "<group>"; };
+		F7D16BE221E4D76F006682C6 /* InputView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputView.swift; sourceTree = "<group>"; };
+		F7D16BE421E4D770006682C6 /* Validator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Validator.swift; sourceTree = "<group>"; };
+		F7D16BE521E4D770006682C6 /* RequiredValidator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RequiredValidator.swift; sourceTree = "<group>"; };
+		F7D16BE621E4D770006682C6 /* Form.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Form.swift; sourceTree = "<group>"; };
+		F7D16BE721E4D770006682C6 /* FormItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FormItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -46,10 +60,41 @@
 		F7D16BD521E4D6F2006682C6 /* SwiftForm */ = {
 			isa = PBXGroup;
 			children = (
+				F7D16BE621E4D770006682C6 /* Form.swift */,
+				F7D16BE721E4D770006682C6 /* FormItem.swift */,
+				F7D16BDE21E4D76F006682C6 /* UI Components */,
+				F7D16BE321E4D770006682C6 /* Validators */,
 				F7D16BD621E4D6F2006682C6 /* SwiftForm.h */,
 				F7D16BD721E4D6F2006682C6 /* Info.plist */,
 			);
 			path = SwiftForm;
+			sourceTree = "<group>";
+		};
+		F7D16BDE21E4D76F006682C6 /* UI Components */ = {
+			isa = PBXGroup;
+			children = (
+				F7D16BE221E4D76F006682C6 /* InputView.swift */,
+				F7D16BDF21E4D76F006682C6 /* TextInputViews */,
+			);
+			path = "UI Components";
+			sourceTree = "<group>";
+		};
+		F7D16BDF21E4D76F006682C6 /* TextInputViews */ = {
+			isa = PBXGroup;
+			children = (
+				F7D16BE021E4D76F006682C6 /* TextInputView.swift */,
+				F7D16BE121E4D76F006682C6 /* TextInputView.xib */,
+			);
+			path = TextInputViews;
+			sourceTree = "<group>";
+		};
+		F7D16BE321E4D770006682C6 /* Validators */ = {
+			isa = PBXGroup;
+			children = (
+				F7D16BE421E4D770006682C6 /* Validator.swift */,
+				F7D16BE521E4D770006682C6 /* RequiredValidator.swift */,
+			);
+			path = Validators;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -95,6 +140,7 @@
 				TargetAttributes = {
 					F7D16BD221E4D6F2006682C6 = {
 						CreatedOnToolsVersion = 10.1;
+						LastSwiftMigration = 1010;
 					};
 				};
 			};
@@ -120,6 +166,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D16BE921E4D770006682C6 /* TextInputView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -130,6 +177,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F7D16BE821E4D770006682C6 /* TextInputView.swift in Sources */,
+				F7D16BEC21E4D770006682C6 /* RequiredValidator.swift in Sources */,
+				F7D16BED21E4D770006682C6 /* Form.swift in Sources */,
+				F7D16BEB21E4D770006682C6 /* Validator.swift in Sources */,
+				F7D16BEE21E4D770006682C6 /* FormItem.swift in Sources */,
+				F7D16BEA21E4D770006682C6 /* InputView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -261,6 +314,7 @@
 		F7D16BDC21E4D6F2006682C6 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -270,6 +324,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftForm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -278,6 +333,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = rkoroni.SwiftForm;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.2;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +342,7 @@
 		F7D16BDD21E4D6F2006682C6 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -295,6 +352,7 @@
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				INFOPLIST_FILE = SwiftForm/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
